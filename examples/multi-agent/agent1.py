@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import argparse
+
 from ns3gym import ns3env
 
 __author__ = "Piotr Gawlowicz"
@@ -16,7 +17,7 @@ env.reset()
 
 ob_space = env.observation_space
 ac_space = env.action_space
-print("Observation space: ", ob_space,  ob_space.dtype)
+print("Observation space: ", ob_space, ob_space.dtype)
 print("Action space: ", ac_space, ac_space.dtype)
 
 

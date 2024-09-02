@@ -204,7 +204,7 @@ main (int argc, char *argv[])
   Ipv4Address dest_ip_addr = dest_ipv4_int_addr.GetLocal ();
 
   InetSocketAddress destAddress (dest_ip_addr, port);
-  destAddress.SetTos (0x70); //AC_BE
+ // destAddress.SetTos (0x70); //AC_BE
   UdpClientHelper source (destAddress);
   source.SetAttribute ("MaxPackets", UintegerValue (pktPerSec * simulationTime));
   source.SetAttribute ("PacketSize", UintegerValue (payloadSize));
